@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap");
+
+/*====== reset css ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-size: 100%;
+}
+/*=======================*/
+
+body {
+  background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
+}
+/*=========== cabecalho ============*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 24px 18px 23px;
+  border-bottom: 0.4px solid #fff2e7;
+}
+header img {
+  height: 62px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+header nav a {
+  /*margin-right: 30px;*/
+  /*white-space: nowrap;*/
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff2e7;
+  font-size: 16px;
+}
+/*==================================*/
+
+/*========== parte central - 1 ==========*/
+main {
+  margin-bottom: 48px;
+}
+main .row-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+main .row-1 img {
+  height: 430px;
+}
+.title_buttom {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.title_buttom h1 {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #fff2e7;
+}
+.title_buttom h2 {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  color: #ecd6c4;
+  font-size: 24px;
+}
+.title_buttom button {
+  background-color: #ecd6c4;
+  width: 185px;
+  height: 67px;
+  border-style: none;
+  border-radius: 20px;
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.title_buttom button:hover {
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+/*=======================================*/
+
+/*========== parte central - 2 ==========*/
+main .row-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .row-2 h3 {
+  margin-top: 65px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff2e7;
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 70px;
+}
+main .row-2 p {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ecd6c4;
+}
+/*=======================================*/
+
+/*=============== rodape ================*/
+footer {
+  border-top: 0.4px solid #fff2e7;
+  padding: 30px;
+}
+footer img {
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
+/*=======================================*/
+
+/*== breakpoint para screen de 768px ==*/
+@media screen and (max-width: 768px) {
+  /*=========== cabecalho 768px ============*/
+  header {
+    padding: 24px 24px 18px 25px;
+  }
+  header nav {
+    padding: 12px;
+    gap: 15px;
+  }
+  header nav a {
+    font-size: 10px;
+  }
+  /*=======================================*/
+
+  /*======= parte central - 1 768px =======*/
+  main .row-1 {
+    flex-direction: column;
+  }
+  main .row-1 img {
+    height: 270px;
+  }
+  .title_buttom {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+  /*=======================================*/
+
+  /*======= parte central - 2 768px =======*/
+  main .row-2 {
+    text-align: center;
+  }
+  main .row-2 p {
+    border: 12px solid transparent;
+  }
+  /*=======================================*/
+}
+/*
+@media screen and (max-width: 425px) {
+  .title_buttom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+*/
+/*======================================*/
